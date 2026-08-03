@@ -1,10 +1,10 @@
 # ai-technical-equipment-assistant
 AI agent for answering questions about technical equipment documentation using Retrieval-Augmented Generation (RAG). Prioritizes official datasheets and falls back to web search when the requested information is unavailable.
 
-#Overview
+# Overview
 AI agent for answering questions about technical equipment documentation using Retrieval-Augmented Generation (RAG). Prioritizes official datasheets and falls back to web search when the requested information is unavailable.
 
-#Features
+# Features
 - Answers questions using official technical documentation 
 - Prioritizes information from manufacturer PDF datasheets
 - Automatically falls back to Google Search when documentation is insufficient
@@ -13,19 +13,19 @@ AI agent for answering questions about technical equipment documentation using R
 - Suggests alternative products when requested
 - Explains technical specifications in natural language
 
-#RoutingStrategy
+# RoutingStrategy
 1. Search the official PDF documentation. 
 2. If the answer exists, use the documentation. 
 3. Otherwise, search the web. 
 4. Generate the final response while preserving conversation context.
 
-#Architecture
+# Architecture
 - Flowise 
 - OpenAI 
 - Google Search 
 - PDF
 
-#TechStack
+# TechStack
 Framework
 - Flowise
 LLM
@@ -39,7 +39,7 @@ Search
 Memory
 - Buffer Memory
 
-#Knowledgebase
+# Knowledgebase
 The assistant primarily relies on official manufacturer documentation stored as PDF files.
 
 The knowledge base currently contains:
@@ -51,16 +51,16 @@ The knowledge base currently contains:
 
 If the requested information is not available in the documentation, the assistant automatically uses Google Custom Search as a secondary source.
 
-#Tools
+# Tools
 PDF Retriever
 Google Custom Search
 
-#Features
+# Features
 Answers using official documentation
 Falls back to Google Search
 Conversational Memory
 
-#ExampleQuestions 
+# ExampleQuestions 
 What amplifier is recommended? 
 What is the impedance? 
 What crossover frequency is used? 
@@ -68,11 +68,11 @@ Compatibility Recommend another amplifier.
 Internet Search Where can I buy this speaker? 
 Are there reviews?
 
-#ProjectStructure
+# ProjectStructure
 
 ```text ai-technical-equipment-assistant/ │ ├── README.md ├── LICENSE ├── flowise/ │ └── chatflow.json └── docs/ └── datasheet.pdf ```
 
-#Installation
+# Installation
 Before importing the project, make sure you have: 
 - Flowise installed 
 - An OpenAI API key 
@@ -92,11 +92,11 @@ git clone https://github.com/1845302-ops/ai-technical-equipment-assistant.git
 5. Add the provided PDF datasheet to the knowledge base. 
 6. Save the chatflow and start chatting.
 
-#Usage
+# Usage
 
 After importing the chatflow into Flowise and configuring the required API credentials, you can start asking technical questions. 
 
-#ExampleQuestions
+# ExampleQuestions
 Documentation 
 - What amplifier is recommended for this speaker? 
 - What is the nominal impedance? 
@@ -115,10 +115,10 @@ Equipment Recommendations
  - Is this model still available?
 
 
-#ChallengesSolutions
+# ChallengesSolutions
 During development, I encountered a problem where the agent preferred web search even for documentation-related questions. I solved this by reworking the tool descriptions and priority logic so that official documentation became the primary source of knowledge, and web search was used only when information was unavailable in PDF format.
 
-#FutureImprovements
+# FutureImprovements
 
 - Support multiple PDF datasheets 
 - Add image recognition for technical diagrams 
