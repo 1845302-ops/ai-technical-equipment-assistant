@@ -1,8 +1,20 @@
 # ai-technical-equipment-assistant
+
+![Flowise](https://img.shields.io/badge/Flowise-AI-blue)
+![OpenAI](https://img.shields.io/badge/OpenAI-GPT--5.4--mini-green)
+![RAG](https://img.shields.io/badge/RAG-enabled-orange)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 AI agent for answering questions about technical equipment documentation using Retrieval-Augmented Generation (RAG). Prioritizes official datasheets and falls back to web search when the requested information is unavailable.
 
 # Overview
 AI agent for answering questions about technical equipment documentation using Retrieval-Augmented Generation (RAG). Prioritizes official datasheets and falls back to web search when the requested information is unavailable.
+
+# Project Status
+Version 1.0.0
+- RAG over PDF documentation 
+- Google Search fallback 
+- Context memory
 
 # Features
 - Answers questions using official technical documentation 
