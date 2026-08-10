@@ -82,7 +82,20 @@ Are there reviews?
 
 # ProjectStructure
 
-```text ai-technical-equipment-assistant/ │ ├── README.md ├── LICENSE ├── flowise/ │ └── chatflow.json └── docs/ └── datasheet.pdf ```
+```
+ ai-technical-equipment-assistant/ 
+ │
+ ├── flowise/ 
+ │ └── AI Technical Equipment Consultant Chatflow.json 
+ └── screenshots/ 
+ │ └── screenshot1.png
+ │ └── screenshot2.png
+ │ └── screenshot3.png
+ │ └── screenshot4.png
+ ├── LICENSE
+ ├── README.md 
+
+ ```
 
 # Installation
 Before importing the project, make sure you have: 
@@ -91,13 +104,13 @@ Before importing the project, make sure you have:
 - A Google Custom Search API key 
 - A Google Custom Search Engine (CSE) 
 
-- Setup 1. Clone this repository. (to install git https://git-scm.com/install)
+1. Clone this repository. (to install git https://git-scm.com/install)
 ```bash
 git clone https://github.com/1845302-ops/ai-technical-equipment-assistant.git
 ```
 
 2. Open Flowise. 
-3. Import the file: ``` flowise/chatflow.json ``` 
+3. Import the file: ``` flowise/AI Technical Equipment Consultant Chatflow.json ``` 
 4. Configure the required credentials: 
 - OpenAI API 
 - Google Custom Search API 
