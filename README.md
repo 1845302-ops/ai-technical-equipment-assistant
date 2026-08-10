@@ -38,18 +38,18 @@ Version 1.0.0
 - PDF
 
 # TechStack
-Framework
-- Flowise
-LLM
-- OpenAI GPT-5.4-mini
-Retrieval
-- Retrieval-Augmented Generation (RAG)
-- Vector Store
-- PDF Retriever
-Search
-- Google Custom Search API
-Memory
-- Buffer Memory
+### Framework
+* Flowise
+### LLM
+* OpenAI GPT-5.4-mini
+### Retrieval
+* Retrieval-Augmented Generation (RAG)
+* Vector Store
+* PDF Retriever
+### Web Search
+* Google Custom Search API
+### Memory
+* Buffer Memory
 
 # Knowledgebase
 The assistant primarily relies on official manufacturer documentation stored as PDF files.
@@ -64,13 +64,8 @@ The knowledge base currently contains:
 If the requested information is not available in the documentation, the assistant automatically uses Google Custom Search as a secondary source.
 
 # Tools
-PDF Retriever
-Google Custom Search
-
-# Features
-Answers using official documentation
-Falls back to Google Search
-Conversational Memory
+* PDF Retriever
+* Google Custom Search
 
 # ExampleQuestions 
 What amplifier is recommended? 
