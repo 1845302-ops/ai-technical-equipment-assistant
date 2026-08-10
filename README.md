@@ -25,7 +25,7 @@ Version 1.0.0
 - Suggests alternative products when requested
 - Explains technical specifications in natural language
 
-# RoutingStrategy
+# Routing Strategy
 1. Search the official PDF documentation. 
 2. If the answer exists, use the documentation. 
 3. Otherwise, search the web. 
@@ -37,7 +37,7 @@ Version 1.0.0
 - Google Search 
 - PDF
 
-# TechStack
+# Tech Stack
 ### Framework
 * Flowise
 ### LLM
@@ -67,15 +67,7 @@ If the requested information is not available in the documentation, the assistan
 * PDF Retriever
 * Google Custom Search
 
-# ExampleQuestions 
-What amplifier is recommended? 
-What is the impedance? 
-What crossover frequency is used? 
-Compatibility Recommend another amplifier. 
-Internet Search Where can I buy this speaker? 
-Are there reviews?
-
-# ProjectStructure
+# Project Structure
 
 ```
  ai-technical-equipment-assistant/ 
@@ -116,7 +108,7 @@ git clone https://github.com/1845302-ops/ai-technical-equipment-assistant.git
 
 After importing the chatflow into Flowise and configuring the required API credentials, you can start asking technical questions. 
 
-# ExampleQuestions
+# Example Questions
 Documentation 
 - What amplifier is recommended for this speaker? 
 - What is the nominal impedance? 
@@ -135,10 +127,10 @@ Equipment Recommendations
  - Is this model still available?
 
 
-# ChallengesSolutions
+# Challenges Solutions
 During development, I encountered a problem where the agent preferred web search even for documentation-related questions. I solved this by reworking the tool descriptions and priority logic so that official documentation became the primary source of knowledge, and web search was used only when information was unavailable in PDF format.
 
-# FutureImprovements
+# Future Improvements
 
 - Support multiple PDF datasheets 
 - Add image recognition for technical diagrams 
